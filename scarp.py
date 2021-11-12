@@ -17,6 +17,6 @@ for row in rows:
         val = [city]
         dict[district] = val
 
-# with open('towns.json', 'w') as outfile:
-#     json.dump(dict, outfile)
-print(len(dict.keys()))
+# saving data into json file
+with open('towns.json', 'w') as outfile:
+    json.dump(dict, outfile)
